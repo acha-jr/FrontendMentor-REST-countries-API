@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | REST Countries API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <h1>Loading...</h2>
+      <span></span>
+    </div>
+
+    <header>
+      <h2>Where In the world?</h2>
+      <div class="theme">
+        <ion-icon name="moon"></ion-icon>
+        <p>Dark Mode</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="to-top">
+        <ion-icon name="arrow-up"></ion-icon>
+      </div>
+      <div class="options">
+        <div class="search">
+          <input type="text" placeholder="Search for a country..." />
+          <ion-icon name="search-sharp"></ion-icon>
+        </div>
+
+        <div class="filter">
+          <div class="dropdown">
+            <p>Filter by Region</p>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+          <ul>
+            <li>All</li>
+            <li>Africa</li>
+            <li>Americas</li>
+            <li>Asia</li>
+            <li>Europe</li>
+            <li>Oceania</li>
+            <li>Antarctic</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="countries"></div>
+    </main>
+
+    <div class="selected">
+      <button class="back"><ion-icon name="arrow-back-outline"></ion-icon> Back</button>
+
+        <div class="country-info">
+        <img src="" alt="" />
+
+        <div class="text">
+          <h2>Belgium</h2>
+
+          <div class="detailed left">
+            <p>Native Name: <span>Belgie</span></p>
+            <p>Population: <span>11,319,511</span></p>
+            <p>Region: <span>Europe</span></p>
+            <p>Sub Region: <span>Western Europe</span></p>
+            <p>Capital: <span>Brussels</span></p>
+          </div>
+
+          <div class="detailed right">
+            <p>Top Level Domain: <span>.be</span></p>
+            <p>Currencies: <span>Euro</span></p>
+            <p>Languages: <span class="languages"></span></p>
+          </div>
+
+          <div class="border">
+            <p>Border Countries:</p>
+            <div class="border-countries"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://github.com/acha-jr" target="_blank">acha-jr</a>.
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
