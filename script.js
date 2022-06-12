@@ -31,7 +31,12 @@ dropdown.addEventListener("click", () => {
   dropdownContent.classList.toggle("show-filter");
 });
 document.addEventListener("mouseup", (e) => {
-  if (e.target != dropdown) {
+  if (
+    e.target != dropdownContent &&
+    e.target.parentNode != dropdownContent &&
+    e.target != dropdown &&
+    e.target.parentNode != dropdown
+  ) {
     dropdownContent.classList.remove("show-filter");
   }
 });
