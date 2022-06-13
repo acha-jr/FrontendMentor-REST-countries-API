@@ -294,7 +294,7 @@ ul li:hover {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap: 180px;
+  gap: 70px;
   align-items: center;
 }
 .country-info img {
@@ -365,7 +365,7 @@ ul li:hover {
   color: rgb(145, 145, 145);
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1110px) {
   header {
     padding: 20px;
   }

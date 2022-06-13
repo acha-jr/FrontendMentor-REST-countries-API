@@ -53,7 +53,7 @@ const load = () => {
 const endLoad = () => {
   setTimeout(() => {
     loader.classList.add("finish");
-  }, 1000);
+  }, 300);
 };
 
 const main = document.querySelector("main");
@@ -161,8 +161,6 @@ filter();
 const back = document.querySelector(".selected button");
 back.addEventListener("click", () => {
   back.parentElement.style.display = "none";
-  load();
-  endLoad();
   main.style.display = "block";
 });
 
@@ -221,8 +219,7 @@ const viewCountry = (url) => {
                 {
                   borderCountries.addEventListener("click", () => {
                     let url = `https://restcountries.com/v3.1/name/${borderCountries.textContent}?fullText=true`;
-                    load();
-                    endLoad();
+
                     viewCountry(url);
                   });
                 }
