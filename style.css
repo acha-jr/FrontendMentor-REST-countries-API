@@ -43,6 +43,15 @@ header {
   font-weight: 600;
   font-size: 1em;
 }
+.theme ion-icon::before {
+  content: attr(sunny);
+}
+.theme p::before {
+  content: "Dark ";
+}
+.dark .theme p::before {
+  content: "Light ";
+}
 
 .options {
   margin: 40px 60px;

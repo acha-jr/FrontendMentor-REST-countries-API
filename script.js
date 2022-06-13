@@ -15,13 +15,25 @@ const theme = document.querySelector(".theme");
 theme.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   let currentTheme = document.body.classList.value;
+  if (document.body.classList.contains("dark")) {
+    theme.children[0].setAttribute("name", "sunny");
+  } else {
+    theme.children[0].setAttribute("name", "moon");
+  }
   // Save Theme
   localStorage.setItem("theme", currentTheme);
 });
+
 window.addEventListener("load", () => {
   // Restore Saved theme
   let currentTheme = localStorage.getItem("theme");
   document.body.classList = currentTheme;
+
+  if (document.body.classList.contains("dark")) {
+    theme.children[0].setAttribute("name", "sunny");
+  } else {
+    theme.children[0].setAttribute("name", "moon");
+  }
 });
 
 // Toggle Filter dropdown
